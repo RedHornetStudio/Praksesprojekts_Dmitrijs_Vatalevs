@@ -1,0 +1,27 @@
+.to-top {
+  position: sticky;
+  bottom: 3%;
+  height: 0;
+  margin-top: -6%;
+  margin-bottom: 3%;
+  margin-left: auto;
+  z-index: 100;
+
+  a {
+    display: none;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 650px) {
+  .to-top {
+    margin-top: -12%;
+    margin-bottom: 9%;
+  }
+}
+
+@media (max-width: 510px) {
+  .to-top {
+    font-size: 14px;
+  }
+}

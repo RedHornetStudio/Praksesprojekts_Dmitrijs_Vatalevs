@@ -1,0 +1,54 @@
+.join {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -3%;
+  background-image: url(../img/joinShape.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+  height: 480px;
+
+  .container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-top: 55px;
+    width: 78%;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 50%;
+      text-align: center;
+    }
+  }
+
+  h3 {
+    margin-bottom: 41px;
+  }
+}
+
+@media (max-width: 900px) {
+  .join .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 690px) {
+  .join {
+    height: 600px;
+
+    .container {
+      flex-direction: column;
+      align-items: center;
+  
+      div {
+        width: 80%;
+        margin-bottom: 70px;
+      }
+    }
+  }
+}

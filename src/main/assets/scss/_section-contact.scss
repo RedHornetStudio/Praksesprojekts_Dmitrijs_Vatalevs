@@ -1,0 +1,139 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-header {
+  margin-bottom: 58px;
+}
+
+.contact-form {
+  max-width: 612px;
+  margin: 0 20px;
+
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 14px;
+    padding: 11px;
+    background-color: #c4c4c466;
+    border: none;
+    border-radius: 7px;
+    font-family: inherit;
+    font-size: inherit;
+    resize: none;
+  }
+
+  .name-email-contaienr {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  textarea {
+    height: 233px;
+  }
+
+  .mandatory {
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 33px;
+  }
+
+  button {
+    display: block;
+    margin: auto;
+    width: 182px;
+    height: 62px;
+    font-size: 24px;
+    border-radius: 31px;
+    margin-bottom: 150px;
+  }
+}
+
+#name,
+#email {
+  width: 48%;
+}
+
+@media (max-width: 700px) {
+  .contact-form .name-email-contaienr {
+    flex-direction: column;
+  }
+
+  #name,
+  #email {
+    width: 100%;
+  }
+}
+
+
+// custom checkbox
+.checkbox-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 55px;
+}
+
+#agree {
+  display: none;
+}
+
+.agree-checkmark {
+  flex: none;
+  width: 16px;
+  height: 16px;
+  vertical-align: top;
+  background-color: #c4c4c466;
+  border-radius: 4px;
+  font-size: 12px;
+  text-align: center;
+  color: white;
+
+  span {
+    opacity: 0;
+  }
+}
+
+#agree:checked + .agree-checkmark {
+  background-color: $secondaryColor;
+
+  span {
+    opacity: 1;
+  }
+}
+
+#agree:active + .agree-checkmark {
+  background-color: #9c9c9c66;
+}
+
+#agree:checked:active + .agree-checkmark {
+  background-color: #ffbd39;
+}
+
+.agree-label {
+  flex: none;
+  width: 93%;
+  vertical-align: top;
+  font-size: 14px;
+}
+
+@media (max-width: 510px) {
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+  }
+
+  .contact-form .mandatory,
+  .agree-label {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .agree-label {
+    width: 90%;
+  }
+}

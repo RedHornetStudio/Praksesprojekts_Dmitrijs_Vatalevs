@@ -1,0 +1,24 @@
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 470px;
+  padding-bottom: 54px;
+  background-image: url(../img/descriptionShape.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+  z-index: 1;
+
+  p {
+    max-width: 654px;
+    margin: 0 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 510px) {
+  .description {
+    height: 320px;
+  }
+}
