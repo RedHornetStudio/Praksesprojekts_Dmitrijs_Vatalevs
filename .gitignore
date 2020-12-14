@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/node
-# Edit at https://www.toptal.com/developers/gitignore?templates=node
+# Created by https://www.toptal.com/developers/gitignore/api/node,vscode
+# Edit at https://www.toptal.com/developers/gitignore?templates=node,vscode
 
 ### Node ###
 # Logs
@@ -113,11 +113,6 @@ dist
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
 
-# End of https://www.toptal.com/developers/gitignore/api/node
-
-# Created by https://www.toptal.com/developers/gitignore/api/vscode
-# Edit at https://www.toptal.com/developers/gitignore?templates=vscode
-
 ### vscode ###
 .vscode/*
 !.vscode/settings.json
@@ -126,4 +121,4 @@ dist
 !.vscode/extensions.json
 *.code-workspace
 
-# End of https://www.toptal.com/developers/gitignore/api/vscode
+# End of https://www.toptal.com/developers/gitignore/api/node,vscode
