@@ -1,12 +1,13 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   entry: './src/main/assets/js/index.js',
   output: {
     path: path.resolve(__dirname, '../dist'),
-    filename: 'assets/js/theme.js',
+    filename: 'assets/js/bundle.js',
     publicPath: ''
   },
   devServer: {
@@ -78,6 +79,9 @@ module.exports = {
     ]
   },
   plugins: [
+    new CleanWebpackPlugin({
+      cleanOnceBeforeBuildPatterns: ['./assets/*', './index.html']
+    }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: 'src/main/index.html'
