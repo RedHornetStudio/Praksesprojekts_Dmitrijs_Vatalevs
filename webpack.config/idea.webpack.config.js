@@ -3,14 +3,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: './src/main/assets/js/index.js',
+  entry: './src/idea/assets/js/index.js',
   output: {
-    path: path.resolve(__dirname, '../dist'),
+    path: path.resolve(__dirname, '../dist/idea'),
     filename: 'assets/js/theme.js',
     publicPath: ''
   },
   devServer: {
-    contentBase: path.resolve(__dirname, '../dist'),
+    contentBase: path.resolve(__dirname, '../dist/idea'),
     publicPath: ''
   },
   module: {
@@ -80,7 +80,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: 'src/main/index.html'
+      template: 'src/idea/index.html'
     }),
     new MiniCssExtractPlugin({
       filename: 'assets/css/style.css'
