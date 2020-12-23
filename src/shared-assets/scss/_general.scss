@@ -1,4 +1,6 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -11,7 +13,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  margin: 0;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
 }
@@ -24,11 +25,9 @@ main {
 h1,
 h2,
 h3 {
-  margin: 0;
-  padding: 0;
   font-family: "Oswald", sans-serif;
   font-weight: 500;
-  color: #2F4858;
+  color: $primaryColor;
 }
 
 h1 {
@@ -44,9 +43,7 @@ h3 {
 }
 
 p {
-  margin: 0;
-  padding: 0;
-  color: #2F4858;
+  color: $primaryColor;
 }
 
 // buttons
@@ -69,6 +66,13 @@ button {
   &:active {
     background-color: $buttonActiveColor;
   }
+}
+
+.btn-big {
+  width: 182px;
+  height: 62px;
+  font-size: 24px;
+  border-radius: 31px;
 }
 
 @media (max-width: 510px) {
