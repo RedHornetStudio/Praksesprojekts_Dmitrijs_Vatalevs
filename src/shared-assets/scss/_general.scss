@@ -50,9 +50,8 @@ p {
 button {
   width: 233px;
   height: 50px;
-  font-family: inherit;
+  font: inherit;
   font-weight: 500;
-  font-size: inherit;
   color: white;
   background-color: $secondaryColor;
   border: none;

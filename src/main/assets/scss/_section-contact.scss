@@ -76,7 +76,7 @@
   display: none;
 }
 
-.agree-checkmark {
+.my-checkbox {
   flex: none;
   width: 16px;
   height: 16px;
@@ -92,7 +92,7 @@
   }
 }
 
-#agree:checked + .agree-checkmark {
+#agree:checked + .my-checkbox {
   background-color: $secondaryColor;
 
   span {
@@ -100,11 +100,11 @@
   }
 }
 
-#agree:active + .agree-checkmark {
+#agree:active + .my-checkbox{
   background-color: #9c9c9c66;
 }
 
-#agree:checked:active + .agree-checkmark {
+#agree:checked:active + .my-checkbox {
   background-color: #ffbd39;
 }
 
