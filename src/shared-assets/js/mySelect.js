@@ -1,10 +1,9 @@
-const select = document.querySelector('.select');
-const options = select.querySelector('.options');
+const mySelect = document.querySelector('.my-select');
+const options = mySelect.querySelector('.options');
 const optionsList = options.querySelectorAll('.option');
-console.log('aaa');
 
 let activeElement = optionsList[0];
-select.addEventListener('click', () => {
+mySelect.addEventListener('click', () => {
   if(options.style.display === 'flex') {
     options.style.display = 'none';
   } else {
@@ -17,7 +16,7 @@ select.addEventListener('click', () => {
   }
 });
 
-select.addEventListener('keyup', e => {
+mySelect.addEventListener('keyup', e => {
   if(e.key === 'Enter' || e.key === ' ') {
     if(options.style.display === 'flex') {
       options.style.display = 'none';
@@ -33,7 +32,7 @@ select.addEventListener('keyup', e => {
   }
 });
 
-select.addEventListener('keydown', e => {
+mySelect.addEventListener('keydown', e => {
   if(e.key === ' ') {
     e.preventDefault();
   }
@@ -63,7 +62,7 @@ select.addEventListener('keydown', e => {
   }
 });
 
-select.addEventListener('focusout', () => {
+mySelect.addEventListener('focusout', () => {
   options.style.display = 'none';
 });
 
