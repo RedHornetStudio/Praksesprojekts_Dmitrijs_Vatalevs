@@ -23,12 +23,11 @@
         <li><a href="">99 iedvesmas stāsti</a></li>
       </ul>
     </nav> 
-    <div class="language">
+    <div class="language-picker" tabindex="0">
       <div class="active">LV</div>
       <div class="hidden">
-        <div>LV</div>
-        <div>EN</div>
-        <div>RU</div>
+        <div class="elem">EN</div>
+        <div class="elem">RU</div>
       </div>
     </div>
     <button class="toggle-button">
@@ -39,9 +38,9 @@
     </button>
     <div class="mobile-nav">
       <div class="mobile-nav-language">
-        <div><a href="">LV</a></div>
-        <div><a href="">EN</a></div>
-        <div><a href="">RU</a></div>
+        <div><a href="LV">LV</a></div>
+        <div><a href="EN">EN</a></div>
+        <div><a href="RU">RU</a></div>
       </div>
       <nav>
         <ul>
@@ -114,8 +113,8 @@
         <div class="mandatory">* obligāti aizpildāmie lauki</div>
         <div class="checkbox-container">
           <input type="checkbox" name="agree" id="agree">
-          <label for="agree" class="my-checkbox" tabindex="0"><span>&#10003;</span></label>
-          <label class="agree-label">Piekrītu, ka mani dati tiks izmantoti likumdošanā noteiktā kārtībā un tiks saglabāti līdz brīdim, kamēr tas būs nepieciešams.</label>
+          <button type="button" data-for="agree" class="my-checkbox" role="checkbox"><span>&#10003;</span></button>
+          <label for="agree" class="agree-label">Piekrītu, ka mani dati tiks izmantoti likumdošanā noteiktā kārtībā un tiks saglabāti līdz brīdim, kamēr tas būs nepieciešams.</label>
         </div>
         <button class="btn-big">Sūtīt</button>
       </form>

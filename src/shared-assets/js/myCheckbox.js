@@ -1,21 +1,18 @@
 const myCheckboxes = document.querySelectorAll('.my-checkbox');
 
 myCheckboxes.forEach(myCheckbox => {
-  myCheckbox.addEventListener('keydown', e => {
-    if(e.key === ' ') {
-      e.preventDefault();
+  const checkbox = document.querySelector(`#${myCheckbox.getAttribute('data-for')}`);
+  const label = document.querySelector(`label[for="${myCheckbox.getAttribute('data-for')}"]`);
+
+  myCheckbox.addEventListener('click', () => {
+    if(checkbox.checked === true) {
+      checkbox.checked = false;
+    } else {
+      checkbox.checked = true;
     }
   });
-  
-  myCheckbox.addEventListener('keyup', e => {
-    if(e.key === ' ') {
-      e.preventDefault();
-      const checkbox = document.querySelector(`#${myCheckbox.getAttribute('for')}`);
-      if(checkbox.checked === true) {
-        checkbox.checked = false;
-      } else {
-        checkbox.checked = true;
-      }
-    }
+
+  label.addEventListener('click', () => {
+    myCheckbox.focus();
   });
 });

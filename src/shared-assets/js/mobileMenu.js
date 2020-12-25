@@ -3,6 +3,7 @@ const mobileNav = document.querySelector('.mobile-nav');
 const toggleButtonLines = toggleButton.querySelectorAll('.toggle-button-line');
 const close = toggleButton.querySelector('.close');
 
+// mobile menu
 toggleButton.addEventListener('click', () => {
   if(close.style.display === 'block') {
     toggleButtonLines.forEach(line => {

@@ -41,7 +41,7 @@
     margin-bottom: 33px;
   }
 
-  button {
+  .btn-big {
     display: block;
     margin: auto;
     margin-bottom: 150px;
@@ -64,7 +64,6 @@
   }
 }
 
-// custom checkbox
 .checkbox-container {
   display: flex;
   justify-content: space-between;
@@ -72,6 +71,7 @@
   margin-bottom: 55px;
 }
 
+// custom checkbox
 #agree {
   display: none;
 }
@@ -92,20 +92,41 @@
   }
 }
 
-#agree:checked + .my-checkbox {
-  background-color: $secondaryColor;
+.clicking .my-checkbox {
+  outline: none;
+} 
 
-  span {
-    opacity: 1;
-  }
+// styling custom checbox in different states
+#agree + .my-checkbox:hover {
+  background-color: #c4c4c466;
 }
 
-#agree:active + .my-checkbox{
-  background-color: #9c9c9c66;
+#agree + .my-checkbox:active {
+  background-color: darken(#c4c4c466, 5%);
+}
+
+#agree:checked + .my-checkbox {
+  background-color: $secondaryColor;
+}
+
+#agree:checked + .my-checkbox > span {
+  opacity: 1;
+}
+
+#agree:checked + .my-checkbox:hover {
+  background-color: $secondaryColor;
+}
+
+#agree:checked + .my-checkbox:active {
+  background-color: darken($secondaryColor, 5%);
 }
 
 #agree:checked:active + .my-checkbox {
-  background-color: #ffbd39;
+  background-color: darken($secondaryColor, 5%);
+}
+
+#agree:active + .my-checkbox {
+  background-color: darken(#c4c4c466, 5%);
 }
 
 .agree-label {
