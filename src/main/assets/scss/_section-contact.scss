@@ -46,6 +46,10 @@
     margin: auto;
     margin-bottom: 150px;
   }
+
+  .checkbox-container {
+    margin-bottom: 57px;
+  }
 }
 
 #name,
@@ -64,78 +68,6 @@
   }
 }
 
-.checkbox-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 55px;
-}
-
-// custom checkbox
-#agree {
-  display: none;
-}
-
-.my-checkbox {
-  flex: none;
-  width: 16px;
-  height: 16px;
-  vertical-align: top;
-  background-color: #c4c4c466;
-  border-radius: 4px;
-  font-size: 12px;
-  text-align: center;
-  color: white;
-
-  span {
-    opacity: 0;
-  }
-}
-
-.clicking .my-checkbox {
-  outline: none;
-} 
-
-// styling custom checbox in different states
-#agree + .my-checkbox:hover {
-  background-color: #c4c4c466;
-}
-
-#agree + .my-checkbox:active {
-  background-color: darken(#c4c4c466, 5%);
-}
-
-#agree:checked + .my-checkbox {
-  background-color: $secondaryColor;
-}
-
-#agree:checked + .my-checkbox > span {
-  opacity: 1;
-}
-
-#agree:checked + .my-checkbox:hover {
-  background-color: $secondaryColor;
-}
-
-#agree:checked + .my-checkbox:active {
-  background-color: darken($secondaryColor, 5%);
-}
-
-#agree:checked:active + .my-checkbox {
-  background-color: darken($secondaryColor, 5%);
-}
-
-#agree:active + .my-checkbox {
-  background-color: darken(#c4c4c466, 5%);
-}
-
-.agree-label {
-  flex: none;
-  width: 93%;
-  vertical-align: top;
-  font-size: 14px;
-}
-
 @media (max-width: 510px) {
   .contact-form input,
   .contact-form textarea {
@@ -146,10 +78,8 @@
   .agree-label {
     font-size: 12px;
   }
-}
 
-@media (max-width: 400px) {
   .agree-label {
-    width: 90%;
+    margin-left: 10px;
   }
 }

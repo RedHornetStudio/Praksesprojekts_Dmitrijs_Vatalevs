@@ -52,33 +52,12 @@
   }
 }
 
-.clicking .my-select {
+.clicking .my-dropdown-menu {
   outline: none;
 }
 
 .my-dropdown-menu {
-  position: relative;
   align-self: center;
-  cursor: pointer;
-
-  .options {
-    position: absolute;
-    display: none;
-    flex-direction: column;
-    left: 50%;
-    top: 100%;
-    background-color: #ffffff;
-    border-radius: 0 0 5px 5px;
-    transform: translate(-50%);
-    overflow: hidden;
-    box-shadow: 2px 2px 4px 0px rgb(148, 148, 148);
-
-    .option {
-      padding: 5px 5px;
-      text-align: center;
-      background-color: #ffffff;
-    }
-  }
 }
 
 .mobile-nav {

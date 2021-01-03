@@ -75,7 +75,14 @@ module.exports = {
         options: {
           name: 'assets/fonts/[contenthash].[ext]'
         }
-      }
+      },
+      // {
+      //   test: /\.(mp4)$/i,
+      //   loader: 'file-loader',
+      //   options: {
+      //     name: 'assets/video/[contenthash].[ext]'
+      //   }
+      // }
     ]
   },
   plugins: [
