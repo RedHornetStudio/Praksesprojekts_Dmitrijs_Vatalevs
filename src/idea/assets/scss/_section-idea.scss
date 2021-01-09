@@ -1,0 +1,26 @@
+.idea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -2vw;
+  height: 550px;
+  padding-bottom: 7%;
+  background-image: url(../img/idea-shape.png), linear-gradient(to bottom, #fff calc(100% - 3.5vw), transparent calc(100% - 3.5vw));
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+
+  .container {
+    width: 585px;
+    margin: 0 20px;
+  }
+
+  h1 {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  
+  p {
+    text-align: center;
+  }
+}

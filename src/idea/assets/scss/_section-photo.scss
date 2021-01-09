@@ -1,0 +1,36 @@
+.photo {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 704px;
+  margin-top: -4vw;
+  background-image: url(../img/Juris.jpg);
+  background-repeat: no-repeat;
+  background-position: 70% 50%;
+  background-size: cover;
+  z-index: -1;
+
+  h3 {
+    width: 815px;
+    margin: 0 20px;
+    margin-bottom: 85px;
+    text-align: center;
+    color: #fff;
+  }
+}
+
+@media (max-width: 870px) {
+  .photo {
+    height: 600px;
+  }
+}
+
+@media (max-width: 510px) {
+  .photo {
+    height: 450px;
+
+    h3 {
+      margin-bottom: 30px;
+    }
+  }
+}
