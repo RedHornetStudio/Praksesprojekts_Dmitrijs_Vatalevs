@@ -23,7 +23,7 @@ main {
   flex-direction: column;
 }
 
-// headers
+// headers and paragraphs
 h1,
 h2,
 h3 {
@@ -50,13 +50,17 @@ p {
 
 // buttons
 button {
+  background-color: transparent;
+  border: none;
+  font: inherit;
+}
+
+.btn {
   width: 233px;
   height: 50px;
-  font: inherit;
   font-weight: 500;
   color: white;
   background-color: $secondaryColor;
-  border: none;
   border-radius: 25px;
   cursor: pointer;
 
@@ -72,8 +76,17 @@ button {
 .btn-big {
   width: 182px;
   height: 62px;
+  font-weight: 500;
   font-size: 24px;
   border-radius: 31px;
+  color: white;
+  background-color: $secondaryColor;
+  cursor: pointer;
+}
+
+// lists
+ul {
+  list-style-type: none;
 }
 
 @media (max-width: 510px) {

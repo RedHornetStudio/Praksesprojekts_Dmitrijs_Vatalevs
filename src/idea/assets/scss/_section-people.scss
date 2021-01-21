@@ -1,8 +1,82 @@
 .people {
-  height: 621px;
   margin-top: -4vw;
   background-image: url(../img/people-shape.png), linear-gradient(to bottom, transparent 3.5vw, #fff 3.5vw);
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100%;
+
+  .container {
+    position: relative;
+    height: 660px;
+    margin: 0 20px;
+  }
+
+  .slide-container {
+    position: absolute;
+    top: 52%;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 590px;
+    overflow: hidden;
+  }
+
+  .track {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 30px;
+    transition: transform 500ms ease-out;
+  }
+
+  .slide {
+    flex: none;
+    width: 100%;
+  }
+
+  h3 {
+    margin-bottom: 10px;
+  }
+
+  .work {
+    margin-bottom: 34px;
+  }
+
+  .about {
+    font-size: 24px;
+    font-style: italic;
+  }
+
+  .previous {
+    margin-right: 40px;
+
+    img {
+      transform: rotate(180deg);
+    }
+  }
+
+  .disabled {
+    opacity: .5;
+  }
+
+  .a {
+    transform: translate(-100%);
+  }
+}
+
+.clicking .people button {
+  outline: none;
+}
+
+@media (max-width: 510px) {
+  .people .work {
+    font-size: 14px;
+  }
+
+  .people .about {
+    font-size: 12px;
+  }
+
+  .people .container {
+    height: 500px;
+  }
 }
